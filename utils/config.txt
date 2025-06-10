@@ -1,0 +1,22 @@
+1   # version
+512 # buffer size in bytes
+log # file name
+0   # enable on startup (0/1)
+on:fixedFrequency
+250 # frequency
+1   # mode (0: disabled, 1: synchronous stabilizer, 2: asynchronous)
+ctrlNN.ob_x
+ctrlNN.ob_y
+ctrlNN.ob_z
+ctrlNN.ob_roll
+ctrlNN.ob_pitch
+ctrlNN.ob_yaw
+ctrlNN.motor_pwm_0
+ctrlNN.motor_pwm_1
+ctrlNN.motor_pwm_2
+ctrlNN.motor_pwm_3
+# Comment whatever you don't need, ctrl for nn-controller / powerDistLog for PID-controller
+powerDistLog.motor_pwm_0
+powerDistLog.motor_pwm_1
+powerDistLog.motor_pwm_2
+powerDistLog.motor_pwm_3
