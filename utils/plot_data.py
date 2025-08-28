@@ -142,7 +142,6 @@ if plotStab:
     plt.legend(loc=9, ncol=4, borderaxespad=0.)
 
 if plotCtrlNN:
-    # plotCurrent += 1
     _, axis = plt.subplots(3, 2, sharex=True)
     axis[0][0].plot(logData['timestamp'], logData['ctrlNN.ob_x'], '-', label='position x')
     axis[0][0].plot(logData['timestamp'], logData['ctrlNN.ob_y'], '-', label='position y')
@@ -180,8 +179,6 @@ if plotCtrlNN:
     axis[2][1].legend(loc=9, ncol=4, borderaxespad=0.)
 
 if plotPID:
-    # plotCurrent += 1
-    # plt.subplot(plotRows, plotCols, plotCurrent)
     _, axis = plt.subplots(4, 1, sharex=True)
     axis[0].plot(logData['timestamp'], logData['powerDistLog.motor_pwm_0'], '-', label='motor PWM 0')
     axis[0].grid(visible=True, which='both', axis='both', color='gray', alpha=0.35, linestyle='--')
